@@ -1,23 +1,24 @@
-// import PromoBanner from "../components/PromoBanner";
-import SidebarCategories from "../components/SidebarCategories";
-import HeroBanner from "../components/HeroBanner";
+import HeroSectionWithSidebar from "../components/HeroSctionWithSideBar";
 
+import BestSelling from "../components/BeastSelling";
+import Categories from "../components/Categories";
+import FlashSales from "../components/FlashSales";
+import NewArrival from "../components/NewArrival";
+import BestPhtoe from "../components/BestPhtoe";
+ import ExploreSection from "../components/ExploreSection";
 const Home = () => {
   return (
     <>
-      {/* <PromoBanner /> */}
-      {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mt-6"> */}
-         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
-          
+      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <HeroSectionWithSidebar />
 
-
-        <SidebarCategories />
-        <div className="lg:col-span-3">
-          <HeroBanner />
-          {/* لاحقاً: featured products */}
-        </div>
+        <FlashSales />
+        <Categories />
+        <BestSelling />
+        <BestPhtoe />
+        <ExploreSection />
+        <NewArrival />
       </div>
-      
     </>
   );
 };

@@ -5,6 +5,7 @@ const categories = [
   "Men's Fashion",
   "Electronics",
   "Home & Lifestyle",
+  
   "Medicine",
   "Sports & Outdoor",
   "Baby's & Toys",

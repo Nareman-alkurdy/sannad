@@ -9,45 +9,13 @@ const Navbar = ({ hideIcons = false }) => {
   return (
     <>
     
-      {/* شريط الإعلان العلوي */}
-      {/* <div className="bg-black text-white w-full flex items-center">
-  <div className="w-full max-w-[1440px] mx-auto px-2 sm:px-6 lg:px-8">
-    <div className="flex justify-between items-center h-10 sm:h-12">
-       */}
-      {/* النص + زر Shop Now */}
-      {/* <div className="flex items-center gap-2 sm:gap-4 truncate">
-        <span className="text-[10px] sm:text-xs md:text-sm lg:text-[14px] font-poppins font-normal whitespace-nowrap truncate">
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-        </span>
-        <Link
-          to="/products"
-          className="text-[10px] sm:text-xs md:text-sm font-poppins font-semibold underline hover:text-gray-300 transition-colors whitespace-nowrap"
-        >
-          Shop Now
-        </Link>
-      </div> */}
-
-      {/* اختيار اللغة */}
-      {/* <div className="flex items-center">
-        <select className="bg-black text-white text-[10px] sm:text-xs md:text-sm font-poppins border-none outline-none cursor-pointer">
-          <option value="en">English</option>
-        </select>
-        <img
-          src="./src/assets/down-arrow.png"
-          alt="Arrow"
-          className="ml-1 sm:ml-2 h-2 w-3"
-        />
-      </div>
-    </div>
-  </div>
-</div> */}
-
-
+     
+      
 <div className="bg-black text-white w-full">
   <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex justify-between items-center h-10 sm:h-12">
       
-      {/* النص + زر Shop Now */}
+     
       <div className="flex items-center gap-2 sm:gap-4 truncate">
         <span className="text-[10px] sm:text-xs md:text-sm lg:text-[14px] font-poppins font-normal whitespace-nowrap truncate">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -60,7 +28,7 @@ const Navbar = ({ hideIcons = false }) => {
         </Link>
       </div>
 
-      {/* اختيار اللغة */}
+     
       <div className="flex items-center">
         <select className="bg-black text-white text-[10px] sm:text-xs md:text-sm font-poppins border-none outline-none cursor-pointer">
           <option value="en">English</option>
@@ -77,11 +45,11 @@ const Navbar = ({ hideIcons = false }) => {
 
 
 
-      {/* النافبار الرئيسي */}
+      
       <nav className="border-b">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* شعار الموقع */}
+           
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
                 <h1 className="text-2xl font-bold font-inter text-black">
@@ -90,7 +58,7 @@ const Navbar = ({ hideIcons = false }) => {
               </Link>
             </div>
 
-            {/* روابط النافبار - تظهر فقط على الشاشات المتوسطة فما فوق */}
+          
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 to="/"
@@ -117,13 +85,15 @@ const Navbar = ({ hideIcons = false }) => {
                 Sign Up
               </Link>
             </div>
-            {/* البحث + الأيقونات (تصغر مع الشاشة) */}
+        
+
+
             <div className="flex items-center space-x-2 sm:space-x-4">
-              {/* مربع البحث - يتقلص حجمه على الشاشات الصغيرة */}
+         
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="Search"
+                  placeholder="Search.. (press /)"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-28 sm:w-48 md:w-64 px-2 sm:px-3 md:px-4 py-1 sm:py-2 pr-8 text-xs sm:text-sm bg-[#F5F5F5] font-poppins border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all"
@@ -137,7 +107,7 @@ const Navbar = ({ hideIcons = false }) => {
                 </div>
               </div>
 
-              {/* أيقونات */}
+        
               {!hideIcons && (
                 <>
                   <button className="p-1 sm:p-2 text-gray-600 hover:text-black bg-transparent">
@@ -154,26 +124,17 @@ const Navbar = ({ hideIcons = false }) => {
                       alt="Cart"
                       className="h-5 w-5 sm:h-6 sm:w-6"
                     />
-                    {/* رقم المنتجات */}
+                  
                     {cart && cart.length > 0 && (
                       <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] sm:text-xs rounded-full px-1">
                         {cart.length}
                       </span>
                     )}
                   </Link>
-                    {/* <link to="/cart" className="relative p-1 sm:p-2 text-gray-600 hover:text-black">
-                    <img src="../assets/Cart1_with_buy.png"
-                    alt="Cart" className="h-5 w-5 sm:h-6 sm:w-6"/>
-                    {cart.lenght > 0 && (<span className="absolute -top-1 -right-1 bg-red-500 text-white taext-[10px] sm:text-xs rounded-full px-1">{cart.length}
-
-                    </span>)} */}
-                    
-                    
                   
                 </>
               )}
 
-              {/* زر الهامبرغر للشاشات الصغيرة */}
               <div className="md:hidden flex items-center">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -186,7 +147,7 @@ const Navbar = ({ hideIcons = false }) => {
           </div>
         </div>
 
-        {/* قائمة الموبايل للروابط فقط */}
+       
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t px-4 py-4 space-y-4">
             <Link

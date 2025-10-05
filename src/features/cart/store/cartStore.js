@@ -10,20 +10,6 @@ export const useCartStore = create((set) => ({
     return{ cart:updated};
    }),
 
-
-
-     // const cartItem = {
-
-//   ...product,
-//   cartItemId: Date.now() + Math.random(), // مفتاح فريد لكل عنصر
-// };
-// const updated = [...state.cart, cartItem];
-
-//       // const updated = [...state.cart, product];
-//       localStorage.setItem("cart", JSON.stringify(updated));
-//       return { cart: updated };
-//     }),
-
    removeFromCart: (id) =>
      set((state) => {
       const updated = state.cart.filter((item) => item.id !== id);

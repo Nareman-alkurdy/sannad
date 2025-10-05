@@ -40,9 +40,9 @@ const handleAddToCart = () => {
   }, [category]);
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Products</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="p-4  max-w-[1440px] mx-auto bg-[#F5F5F5] dark:bg-gray-95">
+      {/* <h2 className="text-xl font-bold mb-4">Products</h2> */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.slice(0,visibleCount).map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

@@ -107,3 +107,14 @@ input[type="number"]::-moz-number-spin-box {
   background-color: transparent;
   opacity: 1;
 }
+
+
+/* إزالة الخلفية السوداء من السهمين داخل input[type=number] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0;
+  border: none;
+}
+
