@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+
 import {
   Box,
   Typography,
@@ -45,7 +47,7 @@ export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
   const [mainImage, setMainImage] = useState(product.images[0]);
-
+  
   if (!product.name) {
     return <Typography>Product not found</Typography>;
   }

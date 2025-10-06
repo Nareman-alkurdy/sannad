@@ -1,35 +1,38 @@
-// const HeroBanner = () => {
-//   return (
-//     <section className="w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 py-10">
-//       {/* النص */}
-//       <div className="flex-1 space-y-4">
-//         <h2 className="text-2xl md:text-4xl font-bold font-poppins">
-//          Apple i14 Series
-//         </h2>
-//         <p className="text-sm md:text-base">
-//           Up to <span className="text-red-500 font-semibold">10% off</span> Voucher
-//         </p>
-//         <a
-//           href="/products"
-//           className="inline-block bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200 transition"
-//         >
-//           Shop Now →
-//         </a>
-//       </div>
+// // const HeroBanner = () => {
+// //   return (
+// //     <section className="w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 py-10">
+// //       {/* النص */}
+// //       <div className="flex-1 space-y-4">
+// //         <h2 className="text-2xl md:text-4xl font-bold font-poppins">
+// //          Apple i14 Series
+// //         </h2>
+// //         <p className="text-sm md:text-base">
+// //           Up to <span className="text-red-500 font-semibold">10% off</span> Voucher
+// //         </p>
+// //         <a
+// //           href="/products"
+// //           className="inline-block bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-gray-200 transition"
+// //         >
+// //           Shop Now →
+// //         </a>
+// //       </div>
 
-//       {/* الصورة */}
-//       <div className="flex-1 flex justify-center mt-6 md:mt-0">
-//         <img
-//           src="./src/assets/hero.png"
-//           alt="iPhone 14"
-//           className="max-w-xs md:max-w-md"
-//         />
-//       </div>
-//     </section>
-//   );
-// };
+// //       {/* الصورة */}
+// //       <div className="flex-1 flex justify-center mt-6 md:mt-0">
+// //         <img
+// //           src="./src/assets/hero.png"
+// //           alt="iPhone 14"
+// //           className="max-w-xs md:max-w-md"
+// //         />
+// //       </div>
+// //     </section>
+// //   );
+// // };
 
-// export default HeroBanner;
+// // export default HeroBanner;
+
+
+
 
 
 

@@ -54,8 +54,7 @@ import ContactPage from "./features/contact/pages/ContactPages";
 import ProductDetails from "./features/productdetails/pages/ProductDetails";
 import WishList from "./features/wishlist/pages/WishList";
 import AboutPage from "./features/about/pages/AboutPage";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-  const queryClient = new QueryClient();
+
 function App() {
   return (
     <BrowserRouter>
